@@ -1,4 +1,4 @@
-My name: Lakmali
+My Name: Lakmali Palihakkara
 
 Project Title: Lab 3
 
