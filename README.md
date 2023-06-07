@@ -1,1 +1,5 @@
-# Lakmali_8902985
+My name: Lakmali
+
+Project Title: Lab 3
+
+Student ID: 8902985
