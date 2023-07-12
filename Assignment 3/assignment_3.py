@@ -39,7 +39,7 @@ driver.execute_script("window.scrollTo(0, 500)")
 # Clicking on show time button
 showtime = driver.find_element("xpath","/html/body/div/div[3]/div/div[5]/div[2]/div/div/div/div/div[1]/div[3]/div[1]/div[2]/div[2]/div[3]/div[1]/button")
 showtime.click()
-time.sleep(8)
+time.sleep(5)
 
 # Closing the webdriver
 driver.close()
