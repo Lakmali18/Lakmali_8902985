@@ -26,20 +26,20 @@ time.sleep(5)
 # Verifying that the search results page has loaded
 assert "Cineplex.com | Search 2015" in driver.title
 
+# Scrolling down
+driver.execute_script("window.scrollTo(0, 300)")
 # Selecting a transformers English movie from the search results
 movie_link = driver.find_element("xpath","/html/body/div[1]/div[1]/div/div[2]/div/div[4]/div/div/div/div/div[1]/div[2]/div[1]/div/div[1]/div/div[2]/a")
-# Scrolling down
-driver.execute_script("arguments[0].scrollIntoView();", movie_link)
 # Clicking on find show time button
 driver.execute_script("arguments[0].click();", movie_link)
 time.sleep(5)
 
-# Clicking on show time button
-showtime = driver.find_element("xpath","/html/body/div/div[3]/div/div[5]/div[2]/div/div/div/div/div[1]/div[3]/div[1]/div[2]/div[2]/div[3]/div[1]")
 # Scrolling down
-driver.execute_script("arguments[0].scrollIntoView();", showtime)
+driver.execute_script("window.scrollTo(0, 500)")
+# Clicking on show time button
+showtime = driver.find_element("xpath","/html/body/div/div[3]/div/div[5]/div[2]/div/div/div/div/div[1]/div[3]/div[1]/div[2]/div[2]/div[3]/div[1]/button")
 showtime.click()
-time.sleep(5)
+time.sleep(8)
 
 # Closing the webdriver
 driver.close()
